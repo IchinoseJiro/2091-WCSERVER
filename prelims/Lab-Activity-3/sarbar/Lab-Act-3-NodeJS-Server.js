@@ -1,3 +1,7 @@
+//Task Name: Lab 3
+//Name: Chantengco Lowell Jireh P.
+//section: WD-201
+
 var http = require('http');
 
 var server = http.createServer(function (req, res) {
