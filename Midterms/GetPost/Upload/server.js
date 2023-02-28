@@ -7,36 +7,32 @@ const path = require('path');
 const mime = require('mime-types');
 const multer = require('multer');
 
-
 const fileStorage = multer.diskStorage({
-destination: function (req, file, callback) {
-callback(null, 'uploads/');
+  destination: function (req, file, callback) {
+    callback(null, 'uploads/');
+  },
 
-},
-
-filename: function (req, file, callback) {
-callback(null, file.originalname);
-},
+  filename: function (req, file, callback) {
+    callback(null, file.originalname);
+  },
 });
 
-const upload = multer({storage: fileStorage});
+const upload = multer({ storage: fileStorage });
 
 app.post('/uploads', upload.single('myFile'), (req, res) => {
-console.log(req.file);
+  console.log(req.file);
 
-req.file.mimetype = mime.lookup(req.file.originalname);
+  req.file.mimetype = mime.lookup(req.file.originalname);
 
-res.sendFile(path.join(__dirname, 'file-uploaded.html'));
-
+  res.sendFile(path.join(__dirname, 'file-uploaded.html'));
 });
 
 app.get('/file-upload', (req, res) => {
-res.sendFile(__dirname + '/' + 'file-upload.html');
-
+  res.sendFile(__dirname + '/' + 'file-upload.html');
 });
 
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-console.log(Listening on port ${port})
-})
+  console.log(`Listening on port ${port}`);
+});
