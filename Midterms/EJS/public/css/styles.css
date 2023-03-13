@@ -6,3 +6,32 @@ h1 {
   color: rgb(25, 134, 116);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+body {
+  font-family: Arial, sans-serif;
+}
+h1, h2 {
+  margin-bottom: 0;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+  color: #666;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin-bottom: 5px;
+}
+section {
+  margin-bottom: 30px;
+}
