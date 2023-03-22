@@ -10,7 +10,6 @@ const dishes = [
 {type: 'Sisig', province: 'Pampanga', price: 220},
 {type: 'Salpicao', province: 'Quezon', price: 180},
 {type: 'Bagnet', province: 'Pampanga', price: 370},
-{type: 'Lechon', province: 'Ilocos', price: 300},
 ];
 
 // Route to display all records
