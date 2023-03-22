@@ -1,11 +1,16 @@
+//Chantengco Lowell Jireh P.
+//WD-201
+//WebServer
+
+
 const express = require('express');
 const app = express();
 
 const dishes = [
 {type: 'Sisig', province: 'Pampanga', price: 220},
-{type: 'Adobo', province: 'Batangas', price: 180},
-{type: 'Kare-Kare', province: 'Pampanga', price: 250},
-{type: 'Lechon', province: 'Cebu', price: 300},
+{type: 'Salpicao', province: 'Quezon', price: 180},
+{type: 'Bagnet', province: 'Pampanga', price: 370},
+{type: 'Lechon', province: 'Ilocos', price: 300},
 ];
 
 // Route to display all records
