@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-  background-color: #e1f8a2;
+  background-color: darkblue;
 }
 h1 {
   color: rgb(25, 134, 116);
@@ -10,7 +10,8 @@ h1 {
 body {
   font-family: Arial, sans-serif;
 }
-h1, h2 {
+h1,
+h2 {
   margin-bottom: 0;
 }
 h1 {
@@ -35,5 +36,3 @@ li {
 section {
   margin-bottom: 30px;
 }
-
-
