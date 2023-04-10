@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 // render the index page
 app.get('/', (req, res) => {
-  res.render('index', { title: 'My Pug App' });
+  res.render('index', { title: 'My freaking Pug App' });
 });
 
 // start the server
