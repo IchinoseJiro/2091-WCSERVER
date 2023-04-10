@@ -3,8 +3,9 @@ body {
   background-color: darkblue;
 }
 h1 {
-  color: rgb(25, 134, 116);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 36px;
+  color: black;
 }
 
 body {
@@ -13,11 +14,6 @@ body {
 
 h2 {
   margin-bottom: 0;
-}
-h1 {
-  font-size: 36px;
-}
-h2 {
   font-size: 24px;
   color: cyan;
 }
